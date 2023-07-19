@@ -39,8 +39,21 @@
 
     
     <script>
-        let nome = window.prompt('Qual é o seu nome?')
-        alert('É um grande prazer em te conhecer ' + nome + '!') // o + aqui tem sentido de CONCATENAR uma string + a variável em questão + resto da string
+        let n1 = Number(prompt('Digite sua primeira nota:')) // Quando a gente usa o prompt ele devolve uma string
+        let n2 = Number(prompt('Digite sua segunda nota:'))  //Colocar o Number na frente do prompt vai converter de "string" para "number"
+        let s = (n1 + n2) // O + aqui está servindo para CONCATENAR, então ele ta pegando as 2 variáveis números e juntando elas. Ex: 7 + 7 == 77.
+        let m = s / 2
+        alert(`A soma entre as notas ${n1} e ${n2} é igual a ${s} sendo assim, a média do aluno é ${m}`) //${} é um TemplateStrings para facilitar. 
+
+        if (m >= 7) {
+            alert('Aprovado')
+        }
+        else{
+            alert('Reprovado')
+        }
+            
+        //(number + number) o + aqui é de soma
+        //(string + string) o + aqui é de concatenação
     </script>
 
     
