@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 04</title>
+    <style>
+        body{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
     
 
     <script>
         let nome = prompt("Qual é o seu nome?")
-        document.write(`Seu nome tem ${nome.length} letras`)
+        document.writeln(`Olá! ${nome}, seu nome tem ${nome.length} letras <br>`)
+        document.writeln(`Seu nome em letras maiúsculas é ${nome.toUpperCase()} <br>`)  // Aqui precisa desses () após o método toUpperCase
+        document.writeln(`Seu nome em letras minúsculas é ${nome.toLowerCase()} `)      // Aqui precisa desses () após o método toLowerCase
     </script>
 </body>
 </html>
