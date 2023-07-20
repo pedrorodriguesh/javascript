@@ -10,11 +10,18 @@
             color: white;
             width: 200px;
             height: 200px;
-            line-height: 200px;
-            text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 1.5em;
             margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -24,5 +31,35 @@
         <p>Interaja...</p>
     </div>
     
+
+    <script>
+        var a = window.document.getElementById('area')    // Por conta do escopo da variável, coloca ela fora da function por enquanto.
+        a.addEventListener('mousedown', segurar)
+        a.addEventListener('mouseup', soltar)
+        a.addEventListener('mouseenter', passar)
+        a.addEventListener('mouseout', passei)
+        
+
+        function segurar() {
+            a.innerText = 'Segurando!'
+            a.style.background = 'blue'
+        }
+
+        function soltar(){
+            a.innerText = 'Soltou!'
+            a.style.background = 'red'
+        }
+
+        function passar(){
+            a.style.background = 'orange'
+            a.innerText = 'Entrou!'
+        }
+
+        function passei(){
+            a.style.background = 'green'
+            a.innerText = 'Saiu!'
+        }
+    </script>
+
 </body>
 </html>
