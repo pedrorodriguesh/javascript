@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando estudos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(49, 115, 138);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>aqui vai o resultado</p>
+    <div id="meio">Clique em mim</div>
+    <p>aprendendo a usar <strong>DOM</strong> em Js</p>
+    
+
+    <script>
+        var corpo = window.document.body
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        p1.style.color = 'black'
+        window.alert(p1.innerText)
+
+        /*
+        var div = document.getElementById('meio')
+        div.style.color = 'red'                      Aqui ta usando o getElementById, porém agora da pra usar por seletor, usando o querySelector
+        div.style.background = 'white'
+        alert(div.innerText)
+        */
+
+        var d = window.document.querySelector('div#meio')
+        d.style.color = 'red'
+        d.style.background = 'white'
+        alert(d.innerText)
+
+    </script>
+
+
+</body>
+</html>
