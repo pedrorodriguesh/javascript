@@ -24,7 +24,6 @@
 
         <div id="res">
             Preencha os dados acima para ver o resultado!
-            
         </div>
     </main>
 
@@ -43,13 +42,32 @@
             var anAtual = ano.getFullYear()
             var ntxt = document.querySelector('input#anonasc')
             var nasc = Number(ntxt.value)
-            var idade = anAtual - nasc
-            
-            res.innerHTML = (`Você tem ${idade} anos! <img src="imagens/homem.png" alt="">`)
 
-            if (nasc > 2023){
-                alert('Insira um ano válido!')
-            }
+            if (ntxt.value.length == 0 || ntxt.value > anAtual)  {
+                alert("[ERRO] Insira um ano válido!")
+            } else{
+                var fsex = document.getElementsByName('sexo')
+                var idade = anAtual - nasc
+                var genero = ''
+                var img = document.createElement('img')
+                img.setAttribute('id', 'foto')
+                
+                if (fsex[0].checked){
+                    genero = 'Homem'
+                    
+                } else if (fsex[1].checked) {
+                    genero = 'Mulher'
+                }
+                res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+            }   
+
+
+            
+            
+            
+
+        
+            
 
         }
     </script>
