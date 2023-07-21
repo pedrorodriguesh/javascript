@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(72, 137, 235);
+}
+
+body h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+main{
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    height: 200px;
+    padding: 25px;
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.418);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+input#anonasc{
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+input#botao{
+    margin-top: 30px;
+}
+
+div#res{
+    padding-top: 10px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+footer a:hover{
+    color: black;
+    text-decoration: underline;
+}
