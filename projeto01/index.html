@@ -54,11 +54,13 @@
                 
                 if (fsex[0].checked){
                     genero = 'Homem'
-                    
+                    img.setAttribute('src', 'homem.png')
                 } else if (fsex[1].checked) {
                     genero = 'Mulher'
+                    img.setAttribute('src', 'mulher2.png')
                 }
                 res.innerHTML = `Detectamos ${genero} com ${idade} anos`
+                res.appendChild(img)
             }   
 
 

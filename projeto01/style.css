@@ -15,7 +15,7 @@ main{
     background-color: white;
     width: 500px;
     margin: auto;
-    height: 200px;
+    height: 400px;
     padding: 25px;
     border-radius: 10px;
 
@@ -54,3 +54,4 @@ footer a:hover{
     color: black;
     text-decoration: underline;
 }
+
