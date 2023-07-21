@@ -24,6 +24,7 @@
 
         <div id="res">
             Preencha os dados acima para ver o resultado!
+            
         </div>
     </main>
 
@@ -44,7 +45,7 @@
             var nasc = Number(ntxt.value)
             var idade = anAtual - nasc
             
-            res.innerHTML = (`Você tem ${idade} anos!`)
+            res.innerHTML = (`Você tem ${idade} anos! <img src="imagens/homem.png" alt="">`)
 
             if (nasc > 2023){
                 alert('Insira um ano válido!')
