@@ -37,10 +37,18 @@
 
     <script>
         function verificar(){
+            
             var ano = new Date()
-            var anAtual = ano.getFullYear
+            var anAtual = ano.getFullYear()
             var ntxt = document.querySelector('input#anonasc')
             var nasc = Number(ntxt.value)
+            var idade = anAtual - nasc
+            
+            res.innerHTML = (`Você tem ${idade} anos!`)
+
+            if (nasc > 2023){
+                alert('Insira um ano válido!')
+            }
 
         }
     </script>
