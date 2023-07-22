@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(81, 172, 202);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+main{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.342);
+}
+
+footer{
+    color: #ffffff;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #322c42;
+    text-decoration: underline;
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
