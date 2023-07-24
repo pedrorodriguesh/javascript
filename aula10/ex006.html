@@ -33,7 +33,7 @@
     
 
     <script>
-        var a = window.document.getElementById('area')    // Por conta do escopo da variável, coloca ela fora da function por enquanto.
+        var a = window.document.querySelector('div#area')    // Por conta do escopo da variável, coloca ela fora da function por enquanto.
         a.addEventListener('mousedown', segurar)
         a.addEventListener('mouseup', soltar)
         a.addEventListener('mouseenter', passar)
@@ -56,7 +56,7 @@
         }
 
         function passei(){
-            a.style.background = 'green'
+            a.style.background = 'purple'
             a.innerText = 'Saiu!'
         }
     </script>
