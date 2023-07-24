@@ -38,16 +38,17 @@
         a.addEventListener('mouseup', soltar)
         a.addEventListener('mouseenter', passar)
         a.addEventListener('mouseout', passei)
+        a.addEventListener('click', cliquei)
         
 
         function segurar() {
-            a.innerText = 'Segurando!'
             a.style.background = 'blue'
+            a.innerText = 'Segurando!'
         }
 
         function soltar(){
-            a.innerText = 'Soltou!'
             a.style.background = 'red'
+            a.innerText = 'Soltou!'
         }
 
         function passar(){
@@ -59,6 +60,8 @@
             a.style.background = 'purple'
             a.innerText = 'Saiu!'
         }
+
+        
     </script>
 
 </body>
