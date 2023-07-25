@@ -13,6 +13,7 @@ if (vel > 70){
     
         window.alert("[ERRO] Insira um valor válido.")
         res.innerHTML = `Insira um valor válido!`
+        situ.innerHTML = ` `
 
     } else {
 
