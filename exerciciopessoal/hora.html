@@ -20,6 +20,40 @@
             text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
         }
 
+        main{
+            background-color: white;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.336);
+            
+        }
+
+        main input{
+            display: block;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            
+        }
+
+        div#hora{
+            text-align: center;
+            margin-top: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2em;
+        }
+
+        div#msg{
+            text-align: center;
+            margin-top: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1em;
+            font-weight: 500;
+
+        }
+
     </style>
 </head>
 <body>
@@ -27,6 +61,19 @@
     <header>
         <h1>Vamos conferir o horário do dia!</h1>
     </header>
+
+    <main>
+        <input type="button" value="Conferir" onclick="enviar()">
+
+        <div id="hora">
+
+        </div>
+
+        <div id="msg"></div>
+    </main>
     
+
+
+    <script src="./js/scripthora.js"></script>
 </body>
 </html>
