@@ -33,13 +33,19 @@ header h1{
 
 header ul{
     text-align: center;
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    margin-top: 5px;
+    
 }
 
 header ul li{
-    display: inline;
-    
-    margin-right: 5px;
-    margin-left: 5px;
+    list-style-type: none;
+
 
     color: #D0CCD0;
 
@@ -56,7 +62,16 @@ li a {
 
 li a:hover{
     color: white;
-    background-color: #274156;
+    background-color: #2741566b;
     padding: 10px;
     border-radius: 3px;
+}
+
+
+main{
+    background-color: #dbdce0;
+    width: 500px;
+    height: 100px;
+
+    margin: auto;
 }
