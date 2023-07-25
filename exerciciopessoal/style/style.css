@@ -82,6 +82,8 @@ main{
 
     margin: auto;
     padding: 15px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
     
 }
 
@@ -105,7 +107,9 @@ footer{
     margin: auto;
     padding: 4px;
 
-    border-radius: 0 0px 10px 10px
+    border-radius: 0 0px 10px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.151);
+
 }
 
 footer p a{
