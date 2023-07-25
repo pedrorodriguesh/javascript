@@ -33,8 +33,15 @@
         main h2{
             font-size: 1em;
             text-align: center;
+        }
 
+        input#age{
+            margin-top: 10px;
+        }
 
+        div#res{
+            text-align: center;
+            margin-top: 15px;
         }
 
         </style>        
@@ -47,7 +54,23 @@
 
     <main>
         <h2>Preencha seus dados abaixo para ver sua situação.</h2>
+
+
+        <label for="nome">Seu nome completo:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome completo" size="25px">
+        <br>
+        <label for="age">Informe sua idade:</label>
+        <input type="number" name="age" id="age" placeholder="Idade">
+
+        <input type="button" value="Checar" onclick="enviar()">
+
+        <div id="res">
+
+        </div>
     </main>
+
+
+    <script src="./js/scriptvotos.js"></script>
     
 </body>
 </html>
