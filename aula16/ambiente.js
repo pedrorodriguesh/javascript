@@ -6,6 +6,6 @@ function parimp(n){
     }
 }
 
-let res = parimp(11)
+let res = parimp(33)
 
 console.log(`O número é ${res}`)
