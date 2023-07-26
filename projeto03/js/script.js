@@ -12,15 +12,12 @@ function contar(){
         var i = Number(txtini.value)
         var f = Number(txtfim.value)
         var p = Number(txtpasso.value)
+        if ( i < f) {
+            for (var c = i; c <= f; c+= p){
+                res.innerHTML += ` ${c} \u{1F449} `
+            }
+        }  
 
-
-        for (var c = i; c <= f; c+= p){
-            res.innerHTML += ` ${c} \u{1F449} `
-        }
-
-    
-
-        
     }
 
 
