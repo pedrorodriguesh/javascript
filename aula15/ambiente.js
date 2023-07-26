@@ -5,3 +5,6 @@ num.push(10) // num.push ele cria um novo valor dentro do valor, criando um novo
 console.log(num)
 console.log(`O vetor tem ${num.length} posições`)   // num.length diz o tamanho do vetor
 console.log(`O primeiro valor do vetor é  ${num[0]}`) // num com [] na frente diz qual o valor está dentro de tal posição
+
+let pos = num.indexOf(4) // o comando indexOf te devolve a posição do valor. 
+console.log(`O valor 4 está na posição ${pos}`)
