@@ -34,3 +34,7 @@ footer{
 input{
     margin-top: 10px;
 }
+
+select{
+    overflow: hidden;
+}
