@@ -1,14 +1,14 @@
-let num = document.querySelector('input#fnum')
-let lista = document.querySelector('select#flista')
-let res = document.querySelector('div#res')
-let valores = []
+let num = document.querySelector('input#fnum')      // pegando o valor do formulário.
+let lista = document.querySelector('select#flista')   // selecionando a lista.
+let res = document.querySelector('div#res')         //selecionando a div onde os resultados vão aparecer.
+let valores = []  // setando o array (vetor), faz isso com []
 
 
-function isNumero(n){
-    if (Number(n) >= 1 && Number(n) <= 100){
-        return true
+function isNumero(n){                              // função para ver se o número é menor que 1 ou maior que 100.
+    if (Number(n) >= 1 && Number(n) <= 100){ 
+        return true      
     } else {
-        return false
+        return false                               
     }
 }
 
