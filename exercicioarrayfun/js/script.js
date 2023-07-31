@@ -61,11 +61,12 @@ function finalizar(){                   // Essa é a função que é chamada qua
 
         media = soma / tot
 
+        // aqui embaixo é toda a parte do resultado, "res" é a div que vai conter o resultado, aqui estamos usando += pra concatenar os textos, se não ele coloca um ou outro.
 
         res.innerHTML = ''
         res.innerHTML += `<p> Ao todo, temos ${tot} números cadastrados. </p>`
         res.innerHTML += `<p> O maior valor informado foi ${maior}. </p>`
-        res.innerHTML += `<p> O menor valor informado foi ${menor}. </p>`
+        res.innerHTML += `<p> O menor valor informado foi ${menor}. </p>`           
         res.innerHTML += `<p> Somando todos os valores temos ${soma}. </p>`
         res.innerHTML += `<p> A média dos valores digitados é ${media}. </p>`
     }
